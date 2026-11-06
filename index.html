@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maturitní kvíz</title>
     <style>
+        /* celá stránka: pozadí, písmo, vystředění obsahu */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            color: #222;
+        }
 
+        /* hlavička s nadpisem */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2b4c7e;
+        }
+
+        /* kontejner kvízu jako "karta" uprostřed stránky */
+        #kviz {
+            max-width: 600px;      /* na širokém monitoru se karta nezvětšuje */
+            margin: 0 auto;        /* auto vlevo a vpravo = vystředění */
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* text otázky */
+        h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        /* tlačítka s odpověďmi: každé na celou šířku karty pod sebou */
+        button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #f4f7fb;
+            border: 2px solid #c9d6e8;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* přehled slabých autorů na konci */
+        h3 {
+            margin-top: 25px;
+            color: #b03a2e;
+        }
+
+        li {
+            margin: 5px 0;
+        }
 
     </style>
 </head>
